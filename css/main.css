@@ -55,7 +55,7 @@ table {
 
 body {
     max-width: 1920px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -474,6 +474,77 @@ h3 {
 }
 
 /* HELP SECTION END */
+
+/* CONTACTS SECTION START */
+
+.contacts {
+    min-height: 434px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-color: #f6f6f6;
+}
+
+.contacts .container {
+    position: relative;
+    padding-left: 600px;
+}
+
+.contacts__picture {
+    position: absolute;
+    top:16px;
+    left: 33px;
+}
+
+.contacts__title {
+    width: 358px;
+    margin-bottom: 15px;
+}
+
+.contacts__donate {
+    margin-bottom: 9px;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    color: #545454;
+}
+
+.contacts__btn {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 9px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 45px;
+    letter-spacing: 1.2px;
+    color: #292929;
+}
+
+.contacts__btn:hover {
+    background-color: #f1cdb3;
+}
+
+.contacts__btn::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 30px;
+    height: 24px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: -385px -5px;
+}
+
+.contacts__small {
+    width: 351px;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: #b2b2b2;
+}
+
+/* CONTACTS SECTION END */
 
 
 .sprite-credit-card {
