@@ -56,7 +56,6 @@ table {
 body {
     max-width: 1920px;
     margin: 0 auto;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 15px;
@@ -100,13 +99,9 @@ h3 {
 .main-header {
     min-height: 925px;
 
-    background-image:
-        url("../img/header-dog.png"), 
-        url("../img/header-bg.jpg");
+    background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
-    background-position:
-        100% 0%,
-        center;
+    background-position: center;
     color: #ffffff;
 }
 
@@ -181,6 +176,7 @@ h3 {
 
 .promo h2 {
     width: 346px;
+    margin-bottom: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 44px;
@@ -546,27 +542,89 @@ h3 {
 
 /* CONTACTS SECTION END */
 
+/* FOOTER START */
 
-.sprite-credit-card {
-    width: 30px;
-    height: 24px;
-    background-position: -385px -5px;
+.footer {
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
-.sprite-envelope {
+.footer .container {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../img/footer-dog.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.footer__contacts {
+    width: 275px;
+    margin-right: 170px;
+}
+
+.footer__locations {
+    width: 300px;
+}
+
+.footer__title {
+    margin-bottom: 45px;
+    color: #ffffff;    
+}
+
+.footer a {
+    display: block;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    color: #f1cdb3;
+    text-decoration: none;
+}
+
+.footer a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+}
+
+.footer__contacts a {
+    padding-left: 66px;
+}
+
+.footer__mailto {
+    margin-bottom: 44px;
+}
+
+.footer__mailto::before {
     width: 40px;
     height: 26px;
     background-position: -425px -5px;
 }
 
-.sprite-pin {
+.footer__tel::before {
+    width: 40px;
+    height: 32px;
+    background-position: -768px -5px;    
+}
+
+.footer__location {
+    padding-left: 46px;
+}
+
+.footer__location:first-of-type {
+    margin-bottom: 20px;
+}
+
+.footer__location::before {
     width: 26px;
     height: 36px;
     background-position: -624px -5px;
 }
 
-.sprite-telephone {
-    width: 40px;
-    height: 32px;
-    background-position: -768px -5px;
-}
+/* FOOTER END */
